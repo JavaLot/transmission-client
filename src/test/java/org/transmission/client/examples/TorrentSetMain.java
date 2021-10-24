@@ -1,9 +1,11 @@
 package org.transmission.client.examples;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import org.transmission.client.*;
+import org.transmission.client.Credentials;
+import org.transmission.client.Printer;
+import org.transmission.client.TrClient;
+import org.transmission.client.TrException;
 import org.transmission.client.args.*;
-import org.transmission.client.jackson.JacksonProvider;
 
 import java.net.MalformedURLException;
 import java.net.URL;

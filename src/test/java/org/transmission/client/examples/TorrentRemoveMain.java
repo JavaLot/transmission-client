@@ -1,11 +1,11 @@
 package org.transmission.client.examples;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import org.transmission.client.*;
+import org.transmission.client.Credentials;
+import org.transmission.client.TrClient;
+import org.transmission.client.TrException;
 import org.transmission.client.args.Identities;
 import org.transmission.client.args.TorrentRemove;
-
-import java.util.List;
 
 public class TorrentRemoveMain {
     public static void main(String[] args) throws TrException, JsonProcessingException {

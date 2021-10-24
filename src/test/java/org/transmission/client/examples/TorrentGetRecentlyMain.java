@@ -3,7 +3,6 @@ package org.transmission.client.examples;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.transmission.client.*;
 import org.transmission.client.args.*;
-import org.transmission.client.jackson.JacksonProvider;
 
 import java.util.List;
 
