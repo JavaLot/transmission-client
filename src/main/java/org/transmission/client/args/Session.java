@@ -6,6 +6,7 @@ import io.soabase.recordbuilder.core.RecordBuilder;
 import java.util.List;
 
 @RecordBuilder
+@RecordBuilder.Options(inheritComponentAnnotations = false)
 public record Session(
         @JsonProperty("alt-speed-down")
         Integer altSpeedDown,

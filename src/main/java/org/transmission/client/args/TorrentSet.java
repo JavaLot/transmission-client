@@ -7,6 +7,7 @@ import java.net.URL;
 import java.util.Collection;
 
 @RecordBuilder
+@RecordBuilder.Options(inheritComponentAnnotations = false)
 public record TorrentSet(
         Byte bandwidthPriority,
         Integer downloadLimit,

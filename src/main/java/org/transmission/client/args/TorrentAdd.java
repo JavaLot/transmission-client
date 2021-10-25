@@ -6,6 +6,7 @@ import io.soabase.recordbuilder.core.RecordBuilder;
 import java.util.Collection;
 
 @RecordBuilder
+@RecordBuilder.Options(inheritComponentAnnotations = false)
 public record TorrentAdd(
         String cookies,
         @JsonProperty("download-dir")
