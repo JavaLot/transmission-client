@@ -12,8 +12,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
+        <record-builder.version>34</record-builder.version>
+        <jeckson.version>2.13.3</jeckson.version>
     </properties>
 
     <build>
@@ -21,13 +23,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.10.0</version>
                 <configuration>
                     <annotationProcessorPaths>
                         <annotationProcessorPath>
                             <groupId>io.soabase.record-builder</groupId>
                             <artifactId>record-builder-processor</artifactId>
-                            <version>28</version>
+                            <version>${record-builder.version}</version>
                         </annotationProcessorPath>
                     </annotationProcessorPaths>
                     <annotationProcessors>
@@ -41,12 +43,12 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.13.0</version>
+            <version>${jeckson.version}</version>
         </dependency>
         <dependency>
             <groupId>io.soabase.record-builder</groupId>
             <artifactId>record-builder-core</artifactId>
-            <version>28</version>
+            <version>${record-builder.version}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
